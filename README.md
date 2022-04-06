@@ -1,3 +1,3 @@
 ## Consulta a uma API de cotação de moedas
 
-Consulta a uma API de cotação das moedas usando python.
+Consulta a uma API de cotação das moedas, para estudo, usando python
