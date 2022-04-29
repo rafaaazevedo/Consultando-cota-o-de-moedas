@@ -7,6 +7,7 @@ while True:
     print('(1) Dólar')
     print('(2) Euro')
     print('(3) Bitcoin')
+    print('(4) Sair')
     opcao = input('Digite a opção:\n')
     if opcao == '1':
         requisicao = requests.get('https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL')
@@ -26,7 +27,10 @@ while True:
         print('### COTACAO ### ', datetime.datetime.now())
         print('Bitcoin máximo: ', cotacao['BTCBRL']['high'])
         print('Bitcoin mínimo: ', cotacao['BTCBRL']['low'])
+    elif opcao == '4':
+        break
     else:
         print('Opção inválida')
     print()
     time.sleep(2)
+print('Fim da consulta, obrigado!')
